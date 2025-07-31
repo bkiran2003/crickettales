@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricketTales.com - Share Your Cricket Stories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://js.stripe.com/v3/" defer></script>
+    <script src="/js/main.js" type="module" defer></script>
+</head>
+<body>
+
+    <header class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main Navigation">
+            <a href="#home" class="logo">CricketTales</a>
+            <button class="nav-toggle" aria-label="toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#stories" class="nav-link">Stories</a></li>
+                <li><a href="#submit" class="nav-link">Submit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div id="error-banner" class="alert alert-error" role="alert" style="display: none;"></div>
+
+        <div id="app-root">
+            <div class="spinner-container">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-subscribe">
+                    <h3>Stay in the Game</h3>
+                    <p>Subscribe to our newsletter for the latest stories.</p>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" name="email" placeholder="your.email@example.com" required aria-label="Newsletter email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <div id="newsletter-message" class="form-message"></div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 CricketTales.com - Powered by Community Stories</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
