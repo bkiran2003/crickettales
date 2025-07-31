@@ -82,3 +82,40 @@ This project has been **rewritten from scratch** to resolve bugs, add features, 
 git clone https://github.com/bkiran2003/crickettales.git
 cd crickettales
 
+### 3. Install Dependencies
+bash
+Copy
+Edit
+npm install
+4. Set Up Environment Variables
+Create a .env file in the root directory.
+
+Copy the contents from .env.example and replace with your actual Stripe credentials:
+
+env
+Copy
+Edit
+STRIPE_PUBLISHABLE_KEY=pk_test_...
+STRIPE_SECRET_KEY=sk_test_...
+STRIPE_WEBHOOK_SECRET=whsec_...
+SITE_URL=http://localhost:3000
+5. Start the Server
+bash
+Copy
+Edit
+npm start
+If successful, you should see a message like:
+
+arduino
+Copy
+Edit
+🏏 CricketTales server running on http://localhost:3000
+6. View in Browser
+Open your browser and go to: http://localhost:3000
+
+vbnet
+Copy
+Edit
+
+Let me know if you want me to also format the **deployment** section next.
+
